@@ -1,0 +1,21 @@
+{
+  "name": "sorisori",
+  "private": true,
+  "description": "SoriSori - 로컬 STT(LM Studio 무관 faster-whisper) + LM Studio 번역",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:local-ai": "services\\local-ai\\.venv\\Scripts\\python -m uvicorn main:app --app-dir services\\local-ai --host 127.0.0.1 --port 8789",
+    "dev:realtime": "npm run dev -w @sorisori/realtime",
+    "dev:pipeline": "npm run dev -w @sorisori/pipeline",
+    "dev:web": "npm run dev -w @sorisori/web",
+    "dev:desktop": "npm run dev -w @sorisori/desktop",
+    "build": "npm run build -w @sorisori/contracts && npm run build -w @sorisori/realtime && npm run build -w @sorisori/pipeline && npm run build -w @sorisori/web && npm run build -w @sorisori/desktop"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

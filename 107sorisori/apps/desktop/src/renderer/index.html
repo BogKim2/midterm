@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SoriSori Capture</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        font-family: ui-sans-serif, system-ui, Segoe UI, sans-serif;
+        background: #0b1220;
+        color: #e7eefc;
+      }
+
+      button {
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.08);
+        color: inherit;
+        padding: 10px 12px;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      pre {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>SoriSori 데스크톱 캡처 (MVP)</h2>
+    <p style="opacity: 0.8; line-height: 1.5">
+      Windows에서 “Stereo Mix”, VB-CABLE 등의 믹스 기기 또는 마이크를 선택해 재생 신호가 들어가게 만들어주세요. 이
+      버전은 <span style="font-family: ui-monospace">getUserMedia</span> 마이크 캡처 기반 MVP입니다.
+    </p>
+
+    <div style="display: flex; gap: 10px; align-items: center">
+      <button id="toggle">시작</button>
+      <div id="status" style="opacity: 0.85">준비됨</div>
+    </div>
+
+    <pre id="log" style="margin-top: 14px"></pre>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

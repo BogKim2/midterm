@@ -1,0 +1,17 @@
+{
+  "name": "@sorisori/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && npm run copy:html",
+    "copy:html": "node ./scripts/copy-html.mjs",
+    "dev": "npm run build && electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "electron": "^35.7.5",
+    "typescript": "^5.7.2"
+  }
+}
