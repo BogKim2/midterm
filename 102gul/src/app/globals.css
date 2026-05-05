@@ -1,0 +1,286 @@
+@import "tailwindcss";
+
+/* ─── Light Mode: 새벽 안개 ─── */
+:root,
+[data-theme="light"] {
+  --bg:           #F4F3EF;
+  --bg-2:         #ECEAE3;
+  --bg-3:         #E1E5E9;
+  --bg-4:         #C9D0D6;
+  --ink:          #1F2630;
+  --ink-deep:     #0F141B;
+  --ink-2:        #4F5862;
+  --ink-3:        #8D96A0;
+  --ink-4:        #C9D0D6;
+  --accent:       #4A6B8A;
+  --accent-soft:  #6E8AA6;
+  --rule:         rgba(31, 38, 48, 0.10);
+  --rule-strong:  rgba(31, 38, 48, 0.22);
+  --btn-bg:       #0F141B;
+  --btn-fg:       #F4F3EF;
+}
+
+/* ─── Dark Mode: 밤하늘 잉크 ─── */
+[data-theme="dark"] {
+  --bg:           #0B0F16;
+  --bg-2:         #11171F;
+  --bg-3:         #161D27;
+  --bg-4:         #1E2632;
+  --ink:          #B5BBC5;
+  --ink-deep:     #F0EEE8;
+  --ink-2:        #6B7585;
+  --ink-3:        #4A5568;
+  --ink-4:        #2A3340;
+  --accent:       #8FA8C2;
+  --accent-soft:  #5C7390;
+  --rule:         rgba(240, 238, 232, 0.08);
+  --rule-strong:  rgba(240, 238, 232, 0.20);
+  --btn-bg:       #F0EEE8;
+  --btn-fg:       #0B0F16;
+}
+
+/* ─── Theme Transition ─── */
+*, *::before, *::after {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* ─── Typography ─── */
+:root {
+  --font-serif: "Noto Serif KR", "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-sans:  "Inter Tight", "Pretendard", "Apple SD Gothic Neo", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono:  "JetBrains Mono", "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* ─── Spacing Scale ─── */
+:root {
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+}
+
+/* ─── Base ─── */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Utility Classes ─── */
+
+/* skin: 페이지 루트에 적용 */
+.skin {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  min-height: 100vh;
+}
+
+.skin .heading  { color: var(--ink-deep); }
+.skin .accent   { color: var(--accent); }
+.skin .muted    { color: var(--ink-2); }
+.skin .faint    { color: var(--ink-3); }
+.skin .surface  { background-color: var(--bg-2); }
+
+/* grain: 종이 질감 */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  mix-blend-mode: multiply;
+  z-index: 9999;
+}
+
+/* fog: 방사형 블러 그라디언트 (다크모드 로그인 등) */
+.fog::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 30% 50%, rgba(74, 107, 138, 0.12) 0%, transparent 70%);
+  z-index: 0;
+}
+
+/* eyebrow */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+/* hairline */
+.hairline {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* ─── Animations ─── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* ─── Reading Body ─── */
+.reading-body {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  line-height: 1.95;
+  color: var(--ink);
+}
+
+.reading-body p:first-of-type {
+  text-indent: 0;
+  color: var(--ink-deep);
+}
+
+.reading-body p + p {
+  text-indent: 2em;
+  margin-top: 0;
+}
+
+/* ─── Buttons ─── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 12px 24px;
+  background-color: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.10em;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 12px 24px;
+  background-color: transparent;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.10em;
+  border: 1px solid var(--rule-strong);
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--bg-2);
+}
+
+/* ─── Tags ─── */
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--rule-strong);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--ink-2);
+  border-radius: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tag:hover {
+  background-color: var(--bg-2);
+}
+
+/* ─── Cards ─── */
+.card {
+  background-color: var(--bg);
+  border-radius: 0;
+  transition: background-color 0.15s ease;
+}
+
+.card:hover {
+  background-color: var(--bg-2);
+}
+
+/* ─── Form Inputs ─── */
+.gg-input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--rule-strong);
+  background: transparent;
+  color: var(--ink-deep);
+  font-family: var(--font-serif);
+  padding: var(--s-3) 0;
+  outline: none;
+  border-radius: 0;
+  transition: border-color 0.15s ease;
+}
+
+.gg-input:focus {
+  border-bottom-color: var(--accent);
+}
+
+.gg-input::placeholder {
+  color: var(--ink-3);
+}
+
+.gg-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.gg-error {
+  border-top: 1px solid rgba(180, 60, 60, 0.4);
+  padding-top: var(--s-2);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(180, 60, 60, 0.8);
+  letter-spacing: 0.06em;
+  margin-top: var(--s-2);
+}
+
+/* ─── Stars (dark mode decoration) ─── */
+.gg-stars {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+[data-theme="dark"] .gg-stars {
+  opacity: 1;
+}
