@@ -1,0 +1,9 @@
+.venv/
+.uv-cache/
+.pytest_tmp/
+.pytest_cache/
+pytest-cache-files-*/
+__pycache__/
+*.pyc
+smart_doc_analyzer.settings.json
+tests/.artifacts/
