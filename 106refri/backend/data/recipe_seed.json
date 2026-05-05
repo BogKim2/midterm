@@ -1,0 +1,156 @@
+[
+  {
+    "name": "계란볶음밥",
+    "category": "한식",
+    "cooking_time": 15,
+    "calories": 450,
+    "instructions": "1. 밥을 준비한다\n2. 달걀을 풀어 스크램블한다\n3. 양파를 볶는다\n4. 밥과 함께 볶는다\n5. 간장으로 간한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "밥", "quantity": 1, "unit": "공기", "is_condiment": false},
+      {"custom_name": "달걀", "quantity": 2, "unit": "개", "is_condiment": false},
+      {"custom_name": "양파", "quantity": 0.5, "unit": "개", "is_condiment": false},
+      {"custom_name": "간장", "quantity": 15, "unit": "ml", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "된장찌개",
+    "category": "한식",
+    "cooking_time": 20,
+    "calories": 280,
+    "instructions": "1. 물을 끓인다\n2. 된장을 풀어 육수를 만든다\n3. 두부와 야채를 넣는다\n4. 고추를 올려 마무리한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "된장", "quantity": 2, "unit": "큰술", "is_condiment": true},
+      {"custom_name": "두부", "quantity": 1, "unit": "모", "is_condiment": false},
+      {"custom_name": "호박", "quantity": 0.5, "unit": "개", "is_condiment": false},
+      {"custom_name": "고추", "quantity": 1, "unit": "개", "is_condiment": false}
+    ]
+  },
+  {
+    "name": "닭가슴살 스테이크",
+    "category": "양식",
+    "cooking_time": 25,
+    "calories": 380,
+    "instructions": "1. 닭가슴살을 준비한다\n2. 소금과 후춧가루로 양념한다\n3. 팬에서 구운다\n4. 버터를 올려 마무리한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "닭가슴살", "quantity": 200, "unit": "g", "is_condiment": false},
+      {"custom_name": "소금", "quantity": 1, "unit": "작은술", "is_condiment": true},
+      {"custom_name": "버터", "quantity": 20, "unit": "g", "is_condiment": true},
+      {"custom_name": "마늘", "quantity": 2, "unit": "쪽", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "김치볶음밥",
+    "category": "한식",
+    "cooking_time": 15,
+    "calories": 420,
+    "instructions": "1. 밥을 준비한다\n2. 김치를 잘게 자른다\n3. 팬에 기름을 두르고 밥을 볶는다\n4. 김치와 달걀을 섞는다\n5. 간장으로 양념한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "밥", "quantity": 1, "unit": "공기", "is_condiment": false},
+      {"custom_name": "김치", "quantity": 100, "unit": "g", "is_condiment": false},
+      {"custom_name": "달걀", "quantity": 1, "unit": "개", "is_condiment": false},
+      {"custom_name": "참기름", "quantity": 1, "unit": "큰술", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "시금치 계란말이",
+    "category": "한식",
+    "cooking_time": 10,
+    "calories": 180,
+    "instructions": "1. 시금치를 데친다\n2. 달걀을 푼다\n3. 팬에 달걀을 부어 시금치를 싼다\n4. 돌돌 말아 자른다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "시금치", "quantity": 150, "unit": "g", "is_condiment": false},
+      {"custom_name": "달걀", "quantity": 2, "unit": "개", "is_condiment": false},
+      {"custom_name": "소금", "quantity": 0.5, "unit": "작은술", "is_condiment": true},
+      {"custom_name": "참기름", "quantity": 0.5, "unit": "큰술", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "감자 스프",
+    "category": "양식",
+    "cooking_time": 30,
+    "calories": 320,
+    "instructions": "1. 감자를 깍둑썬다\n2. 냄비에 물과 우유를 붓는다\n3. 감자를 넣고 삶는다\n4. 으깬다\n5. 소금으로 간한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "감자", "quantity": 2, "unit": "개", "is_condiment": false},
+      {"custom_name": "우유", "quantity": 200, "unit": "ml", "is_condiment": false},
+      {"custom_name": "버터", "quantity": 10, "unit": "g", "is_condiment": true},
+      {"custom_name": "소금", "quantity": 1, "unit": "작은술", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "소고기 미역국",
+    "category": "한식",
+    "cooking_time": 20,
+    "calories": 280,
+    "instructions": "1. 물을 끓인다\n2. 소고기를 넣어 육수를 낸다\n3. 미역을 넣는다\n4. 간장으로 간한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "소고기", "quantity": 150, "unit": "g", "is_condiment": false},
+      {"custom_name": "미역", "quantity": 20, "unit": "g", "is_condiment": false},
+      {"custom_name": "간장", "quantity": 1, "unit": "큰술", "is_condiment": true},
+      {"custom_name": "마늘", "quantity": 3, "unit": "쪽", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "된장양념 두부구이",
+    "category": "한식",
+    "cooking_time": 12,
+    "calories": 220,
+    "instructions": "1. 두부를 깍둑썬다\n2. 된장을 양념해 섞는다\n3. 팬에 구운다\n4. 참기름을 뿌린다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "두부", "quantity": 2, "unit": "모", "is_condiment": false},
+      {"custom_name": "된장", "quantity": 2, "unit": "큰술", "is_condiment": true},
+      {"custom_name": "참기름", "quantity": 1, "unit": "큰술", "is_condiment": true},
+      {"custom_name": "마늘", "quantity": 2, "unit": "쪽", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "양파 계란 덮밥",
+    "category": "한식",
+    "cooking_time": 12,
+    "calories": 380,
+    "instructions": "1. 밥을 담는다\n2. 양파를 채썬다\n3. 계란을 푼다\n4. 팬에서 양파와 계란을 익힌다\n5. 밥 위에 올린다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "밥", "quantity": 1, "unit": "공기", "is_condiment": false},
+      {"custom_name": "양파", "quantity": 1, "unit": "개", "is_condiment": false},
+      {"custom_name": "달걀", "quantity": 2, "unit": "개", "is_condiment": false},
+      {"custom_name": "간장", "quantity": 1, "unit": "큰술", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "당근 스튜",
+    "category": "양식",
+    "cooking_time": 35,
+    "calories": 350,
+    "instructions": "1. 당근과 감자를 깍둑썬다\n2. 우유와 버터를 데운다\n3. 채소를 넣는다\n4. 약불에서 익힌다\n5. 소금으로 간한다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "당근", "quantity": 2, "unit": "개", "is_condiment": false},
+      {"custom_name": "감자", "quantity": 2, "unit": "개", "is_condiment": false},
+      {"custom_name": "우유", "quantity": 250, "unit": "ml", "is_condiment": false},
+      {"custom_name": "버터", "quantity": 20, "unit": "g", "is_condiment": true}
+    ]
+  },
+  {
+    "name": "돼지고기 국밥",
+    "category": "한식",
+    "cooking_time": 25,
+    "calories": 420,
+    "instructions": "1. 물을 끓인다\n2. 돼지고기를 삶는다\n3. 국에 밥을 담는다\n4. 국물을 붓는다\n5. 고추와 마늘을 올린다",
+    "is_public": true,
+    "ingredients": [
+      {"custom_name": "돼지고기", "quantity": 200, "unit": "g", "is_condiment": false},
+      {"custom_name": "밥", "quantity": 1, "unit": "공기", "is_condiment": false},
+      {"custom_name": "고추", "quantity": 1, "unit": "개", "is_condiment": false},
+      {"custom_name": "마늘", "quantity": 3, "unit": "쪽", "is_condiment": true}
+    ]
+  }
+]
