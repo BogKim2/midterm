@@ -1,0 +1,252 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-05-05T10:29:32.588Z",
+  "activeFeatures": [
+    "saju-ai-mvp-foundation",
+    "saju-core-accuracy"
+  ],
+  "primaryFeature": "saju-ai-mvp-foundation",
+  "features": {
+    "saju-ai-mvp-foundation": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 1,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:03:52.220Z",
+          "completedAt": "2026-05-05T10:04:41.453Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:03:52.220Z",
+          "completedAt": "2026-05-05T10:07:36.680Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:03:52.220Z",
+          "completedAt": "2026-05-05T10:15:41.980Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:03:52.220Z",
+          "completedAt": "2026-05-05T10:16:46.211Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:03:52.220Z",
+          "completedAt": "2026-05-05T10:24:14.236Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-05-05T10:03:52.221Z",
+        "lastUpdated": "2026-05-05T10:24:14.236Z"
+      },
+      "completedAt": "2026-05-05T10:24:14.234Z"
+    },
+    "saju-core-accuracy": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:25:32.625Z",
+          "completedAt": "2026-05-05T10:26:05.649Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:25:32.625Z",
+          "completedAt": "2026-05-05T10:27:07.531Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:25:32.625Z",
+          "completedAt": "2026-05-05T10:29:32.560Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:25:32.625Z",
+          "completedAt": "2026-05-05T10:29:32.564Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-05-05T10:25:32.625Z",
+          "completedAt": "2026-05-05T10:29:32.588Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-05-05T10:25:32.626Z",
+        "lastUpdated": "2026-05-05T10:29:32.588Z"
+      },
+      "completedAt": "2026-05-05T10:29:32.586Z"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Starter",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-05-05T10:03:52.218Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-05-05T10:29:32.588Z"
+  },
+  "history": [
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-05-05T10:04:41.451Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-05-05T10:04:41.452Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-05-05T10:07:04.134Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-05-05T10:07:36.678Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-05-05T10:07:36.679Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-05-05T10:15:41.978Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-05-05T10:15:41.979Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-05-05T10:16:46.209Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-05-05T10:16:46.210Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "from": "act",
+      "to": "report",
+      "timestamp": "2026-05-05T10:23:42.818Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "action": "phase_complete",
+      "phase": "act",
+      "nextPhase": "report",
+      "timestamp": "2026-05-05T10:23:42.819Z"
+    },
+    {
+      "feature": "saju-ai-mvp-foundation",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-05-05T10:24:14.235Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-05-05T10:26:05.646Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-05-05T10:26:05.647Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "from": "design",
+      "to": "design",
+      "timestamp": "2026-05-05T10:26:05.651Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-05-05T10:27:07.529Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-05-05T10:27:07.530Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-05-05T10:29:32.557Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-05-05T10:29:32.558Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-05-05T10:29:32.562Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-05-05T10:29:32.563Z"
+    },
+    {
+      "feature": "saju-core-accuracy",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-05-05T10:29:32.587Z"
+    }
+  ]
+}
