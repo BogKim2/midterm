@@ -12,7 +12,14 @@ This repository contains multiple midterm project directories.
 - `107sorisori`
 - `108saju`
 - `110dungeon`
+- `113prigio`
 - `12mct`
+
+## 113prigio
+
+`113prigio` (Prigio)는 냉장고 AI 식재료 관리·사진 분석·레시피 추천 풀스택 웹앱입니다. FastAPI + 로컬 PostgreSQL + LM Studio, React + Vite + TypeScript + Tailwind.
+
+See [113prigio/README.md](./113prigio/README.md) and [113prigio/plan_local.md](./113prigio/plan_local.md) for setup and architecture notes.
 
 ## 12mct
 
