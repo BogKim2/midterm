@@ -11,6 +11,7 @@ This repository contains multiple midterm project directories.
 - `106refri`
 - `107sorisori`
 - `108saju`
+- `110dungeon`
 
 ## 108saju
 
@@ -22,3 +23,9 @@ This repository contains multiple midterm project directories.
 - Saju core improvement: solar/lunar conversion and gapja-based pillar calculation
 
 See [108saju/README.md](./108saju/README.md) for local setup and project details.
+
+## 110dungeon
+
+`110dungeon` is a FastAPI + React (Vite) AI text dungeon RPG: Google OAuth, SQLite, and LM Studio (OpenAI-compatible local LLM, e.g. Qwen3).
+
+See [110dungeon/README.md](./110dungeon/README.md) and [110dungeon/plan.md](./110dungeon/plan.md) for setup and architecture notes.
