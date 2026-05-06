@@ -12,6 +12,13 @@ This repository contains multiple midterm project directories.
 - `107sorisori`
 - `108saju`
 - `110dungeon`
+- `12mct`
+
+## 12mct
+
+`12mct`는 LM Studio 연동 식사 칼로리 추적 웹앱 MVP입니다. React + Vite 프론트엔드, FastAPI + TensorFlow 백엔드.
+
+See [12mct/README.md](./12mct/README.md) for local setup.
 
 ## 108saju
 

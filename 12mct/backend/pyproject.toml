@@ -1,0 +1,15 @@
+[project]
+name = "mct-backend"
+version = "0.1.0"
+description = "Meal Calorie Tracker backend with LM Studio integration"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.136.1",
+    "httpx>=0.28.1",
+    "numpy>=1.24.0",
+    "Pillow>=10.0.0",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.26",
+    "tensorflow>=2.16.0",
+    "uvicorn>=0.46.0",
+]

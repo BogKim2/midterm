@@ -1,0 +1,124 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-05-06T04:25:25.272Z",
+  "activeFeatures": [
+    "lmstudio-meal-calorie-tracker"
+  ],
+  "primaryFeature": "lmstudio-meal-calorie-tracker",
+  "features": {
+    "lmstudio-meal-calorie-tracker": {
+      "phase": "completed",
+      "matchRate": null,
+      "iterationCount": 0,
+      "documents": {},
+      "taskChain": [
+        {
+          "phase": "plan",
+          "status": "completed",
+          "createdAt": "2026-05-06T03:51:39.498Z",
+          "completedAt": "2026-05-06T03:52:42.746Z"
+        },
+        {
+          "phase": "design",
+          "status": "completed",
+          "createdAt": "2026-05-06T03:51:39.498Z",
+          "completedAt": "2026-05-06T03:52:42.751Z"
+        },
+        {
+          "phase": "do",
+          "status": "completed",
+          "createdAt": "2026-05-06T03:51:39.498Z",
+          "completedAt": "2026-05-06T04:25:25.258Z"
+        },
+        {
+          "phase": "check",
+          "status": "completed",
+          "createdAt": "2026-05-06T03:51:39.498Z",
+          "completedAt": "2026-05-06T04:25:25.267Z"
+        },
+        {
+          "phase": "report",
+          "status": "completed",
+          "createdAt": "2026-05-06T03:51:39.498Z",
+          "completedAt": "2026-05-06T04:25:25.272Z"
+        }
+      ],
+      "timestamps": {
+        "started": "2026-05-06T03:51:39.498Z",
+        "lastUpdated": "2026-05-06T04:25:25.272Z"
+      },
+      "completedAt": "2026-05-06T04:25:25.270Z"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Starter",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-05-06T03:51:39.496Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-05-06T04:25:25.272Z"
+  },
+  "history": [
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "from": "plan",
+      "to": "design",
+      "timestamp": "2026-05-06T03:52:42.744Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "action": "phase_complete",
+      "phase": "plan",
+      "nextPhase": "design",
+      "timestamp": "2026-05-06T03:52:42.745Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "from": "design",
+      "to": "do",
+      "timestamp": "2026-05-06T03:52:42.749Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "action": "phase_complete",
+      "phase": "design",
+      "nextPhase": "do",
+      "timestamp": "2026-05-06T03:52:42.750Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "from": "do",
+      "to": "check",
+      "timestamp": "2026-05-06T04:25:25.255Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "action": "phase_complete",
+      "phase": "do",
+      "nextPhase": "check",
+      "timestamp": "2026-05-06T04:25:25.257Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "from": "check",
+      "to": "act",
+      "timestamp": "2026-05-06T04:25:25.265Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "action": "phase_complete",
+      "phase": "check",
+      "nextPhase": "act",
+      "timestamp": "2026-05-06T04:25:25.266Z"
+    },
+    {
+      "feature": "lmstudio-meal-calorie-tracker",
+      "action": "phase_complete",
+      "phase": "report",
+      "nextPhase": "completed",
+      "timestamp": "2026-05-06T04:25:25.270Z"
+    }
+  ]
+}
